@@ -1,0 +1,253 @@
+/* RESET CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: Verdana,sans-serif;
+}
+.main{
+    overflow: hidden ;
+}
+.btn{
+    background-color: #f1f1f1;
+    color: #000;
+    text-decoration: none;
+    width: 100%;
+    padding: 11px 16px;
+    font-size: 15px;
+    display: inline-block;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.btn:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+.title{
+    padding: 16px;
+    font-size: 24px;
+    line-height: 1.5;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+/* Header */
+.header{
+    position: fixed ;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 54.5px;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+.nav_wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+
+}
+.header__home,
+.nav li {
+    display: inline-block;
+    position: relative;
+}
+
+.header__home a,
+.nav li a{
+    color: #000;
+    text-decoration: none;
+    line-height: 22.5px;
+    font-size: 15px;
+    padding: 8px 16px;
+    display: block;
+    letter-spacing: 4px;
+}
+.header__home a:hover,
+.nav li a:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+/* Slider */
+.slider{
+    position: relative;
+    /* Để ko chiếm ko gian của header */
+    margin-top: 54.5px;
+    /* Để chiều cao bằng 53,33% chiều rộng */
+    padding-top: 53.33%; 
+    background: url(./img/slider/architect.jpg) top center / cover no-repeat; 
+}
+ .slider__brand-desc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+}
+.slider__brand-desc b{
+    color: #fff;
+    background-color: #000;
+    padding: 8px 16px;
+    opacity: 0.75;
+    font-size: 36px; 
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+.slider__brand-desc span{
+    color: #f1f1f1;
+    font-size: 36px;
+    letter-spacing: 4px;
+}
+
+/* Content */
+#project{
+    padding: 32px 16px;
+}
+
+.project__desc{
+    position: relative;
+    padding: 0 4px 0 ;
+    
+}
+.project__img{
+    max-width: 100%;
+    margin-bottom: 12px;
+}
+.project__desc-name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 4px;
+    color: #fff;
+    background-color: #000;
+    padding: 8px 16px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+/* About */
+
+#about{
+
+}
+
+.about__desc{
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.about__img{
+    filter: grayscale(70%);
+}
+.member__infor{
+    padding: 0 4px;
+}
+.member__name{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.member__job{
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    opacity: 0.6;
+}
+.member__desc{
+    font-size: 15px;
+    margin-bottom: 10px;
+
+}
+
+
+/* Contact */
+#contact{
+    margin-top: 50px;
+}
+.contact__desc{
+    color: #000;
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 22.5px;
+    margin-bottom: 16px;
+}
+.contact__form{
+    width: 100%;
+    padding: 8px;
+    background-color: #fff;
+    margin-bottom: 16px;
+    line-height: 22.5px;
+    border: 1px solid #ccc;
+}
+ .contact__submit {
+    color: #fff;
+    background: #000;
+    font-size: 15px;
+    margin: 15px 0;
+    padding: 8px 16px;
+    border: none;
+    line-height: 22.5px;
+    cursor: pointer;
+}
+
+.map {
+    position: relative;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+.map__image {
+    width: 100%;
+}
+/* Footer */
+#footer{
+    color: #fff;
+    height: 84.5px;
+    line-height: 84.5px;
+    
+    font-size: 15px;
+    text-align: center;
+    background-color: #000;
+}
+#footer a{
+    color: #fff;
+}
+
+/* Nav_mobile */
+.nav__bars-btn{
+    position: absolute;
+    top: 18px;
+    right: -5px;
+    padding: 0 30px;
+    
+}
+.nav-mobile-icon{
+    font-size: 20px;
+}
+.nav-mobile-list {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 54px;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 30%);
+    background-color: #fff;
+    width: 100%;
+}
+ .nav-mobile-list li a {
+    color: #000;
+    text-decoration: none;
+    line-height: 22.5px;
+    font-size: 15px;
+    padding: 16px 30px;
+    display: block;
+    letter-spacing: 4px;
+}

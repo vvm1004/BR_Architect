@@ -1,0 +1,63 @@
+/* PC */
+@media (min-width: 64em){
+   
+}
+
+/* Tablet & mobile */
+@media(max-width: 63.9375em){
+    .about__img {
+        margin-top: 30px;
+    }
+    form .contact__form {
+        padding: 12px;
+    }
+    
+}  
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+}
+
+/* Mobile */
+
+@media (max-width: 46.1875em) {
+    .project__desc .member__infor {
+        padding: 0 16px;
+    }
+    .about__desc {
+        margin: 0 16px 40px;
+    }
+    .contact__desc {
+        padding: 0 16px;
+    }
+    form{
+        margin: 0 16px;
+    }
+    .map__image {
+        padding: 0 16px;
+    }
+    .about__img {
+        padding: 0 16px;
+    }
+    .nav_wrapper .nav {
+        display: none;
+    }
+    .slider__brand-desc span {
+        display: none;
+    }
+
+    .member__infor .btn{
+        padding: 18px 16px;
+    }
+    form .contact__submit {
+        width: 100%;
+        padding: 12px 16px;
+    }
+    #nav-mobile-input:checked ~ .nav-mobile-list{
+        display: block;
+    }
+    .nav__bars-btn{
+        display: block;
+    }
+
+}
